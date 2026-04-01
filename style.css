@@ -1,0 +1,176 @@
+h1 {
+  color: black;
+  font-size: 50px
+}
+h2 {
+  color: darkred;
+  font-size: 25px
+}
+
+h3 {
+  color: black;
+  font-size: 25px
+}
+
+button {
+  color: darkred;
+  font-size: 21px
+  }
+
+body{
+font-family:Arial;
+margin:0;
+background:#f6f6f6;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+#search{
+padding:10px;
+width:250px;
+border-radius:20px;
+border:1px solid #ccc;
+}
+
+.cartIcon{
+font-size:20px;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:center;
+gap:10px;
+padding:15px;
+background:#fafafa;
+}
+
+nav button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:#e63946;
+color:white;
+cursor:pointer;
+}
+
+/* PRODUCTS GRID */
+
+#products{
+display:grid;
+grid-template-columns:repeat(auto-fill,220px);
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+/* PRODUCT CARD */
+
+.product{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:transform 0.2s;
+}
+
+.product:hover{
+transform:scale(1.05);
+}
+
+.product img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+}
+
+.productInfo{
+padding:15px;
+text-align:left;
+}
+
+.productInfo h3{
+margin:5px 0;
+}
+
+.price{
+font-weight:bold;
+}
+
+.product button{
+width:100%;
+padding:10px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+}
+.main-img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.thumbnails{
+display:flex;
+gap:5px;
+margin-top:5px;
+}
+
+.thumb{
+width:50px;
+height:50px;
+object-fit:cover;
+cursor:pointer;
+border-radius:5px;
+}
+
+#paypal-button-container {
+  dispaly:none;
+}
+
+#products img {
+  width: 200px;      /* gleiche Breite */
+  height: 250px;     /* gleiche Höhe → Rechteck */
+  object-fit: cover; /* Bild füllt das Rechteck */
+}#products img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px; /* runde Ecken */
+}#products div {
+  width: 220px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+#products div:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+#products button {
+  margin: 5px;
+  cursor: pointer;
+}
